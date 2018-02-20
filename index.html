@@ -8,64 +8,134 @@
   <title>Andrei Filyaev — Porfolio Site</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="responsive.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <img class="header__logo" src="images/browser.svg" alt="logo">
-    <h1 class="header__name">Andrei Filyaev</h1>
-    <h2 class="header__profession">Front-End Developer</h2>
+    <i class="far fa-file-code header__logo"></i>
+    <h1 class="header__name">Hi! I'm Andrei Filyaev</h1>
+    <h2 class="header__profession">a Front-End Developer</h2>
   </header>
 
   <nav id="drawer" class="nav">
+    <label for="hamburger" class="nav__menu">
+      <span class="nav__button">
+        <i class="fas fa-bars"></i>
+      </span>
+    </label>
+    <input type="checkbox" id="hamburger" class="nav__input">
+
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#">Home</a>
+        <a href="#" title="Home">
+          <i class="fas fa-home"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#">Projects</a>
+        <a href="#" title="Portfolio">
+          <i class="fas fa-briefcase"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#">About me</a>
+        <a href="#" title="About me">
+          <i class="fas fa-info-circle"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#">Contact</a>
+        <a href="#" title="Contact">
+          <i class="fas fa-bullhorn"></i>
+        </a>
       </li>
     </ul>
   </nav>
 
   <main>
     <article class="portfolio">
+
+      <aside class="portfolio__about">
+        <p>
+          Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
+          Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem
+          ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna
+          sed nunc rhoncus amet pharetra et feugiat tempus.
+        </p>
+      </aside>
+
       <picture class="portfolio__photo">
         <img src="images/luca-bravo-217276.jpg" alt="notebook" srcset="">
       </picture>
 
-      <h3>Featured Work</h3>
-
+      <h2 class="portfolio__title">Featured Work</h2>
       <section class="portfolio__thumbnails">
-        <div class="portfolio__item">
 
-        </div>
         <div class="portfolio__item">
-
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__screenshot" title="Pixel Art Maker">
+            <img src="images/FireShot Capture 4 - Pixel Art Maker! - https___codepen.io_Soheevich_full_GymOeJ_.png" alt="Pixel Art Maker"
+              srcset="">
+          </a>
+          <h3 class="portfolio__description">Pixel Art Maker</h3>
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__link">https://soheevich.github.io/Pixel-Art-Maker/</a>
         </div>
+
         <div class="portfolio__item">
-
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__screenshot" title="Pixel Art Maker">
+            <img src="images/jantine-doornbos-398339-unsplash.jpg" alt="Pixel Art Maker" srcset="">
+          </a>
+          <h3 class="portfolio__description">Pixel Art Maker</h3>
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__link">https://soheevich.github.io/Pixel-Art-Maker/</a>
         </div>
+
+        <div class="portfolio__item">
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__screenshot" title="Pixel Art Maker">
+            <img src="images/farzad-nazifi-71686-unsplash.jpg" alt="Pixel Art Maker" srcset="">
+          </a>
+          <h3 class="portfolio__description">Pixel Art Maker</h3>
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__link">https://soheevich.github.io/Pixel-Art-Maker/</a>
+        </div>
+
+        <div class="portfolio__item">
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__screenshot" title="Pixel Art Maker">
+            <img src="images/bram-naus-200967-unsplash.jpg" alt="Pixel Art Maker" srcset="">
+          </a>
+          <h3 class="portfolio__description">Pixel Art Maker</h3>
+          <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__link">https://soheevich.github.io/Pixel-Art-Maker/</a>
+        </div>
+
       </section>
-
     </article>
-
-    <aside class="portfolio__sidebar">
-    </aside>
   </main>
 
   <footer class="footer">
-    <div>Icons made by
-      <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-      <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    <div class="footer__item">
+      <i class="fas fa-envelope-open footer__icon"></i>
+      <p class="footer__text">Email information@untitled.tld</p>
     </div>
+
+    <div class="footer__item">
+      <i class="fas fa-phone footer__icon"></i>
+      <p class="footer__text">Phone (000) 000-0000 x12387</p>
+    </div>
+
+    <div class="footer__item footer__social">
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-stack-overflow"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-slack-hash"></i>
+      </a>
+    </div>
+
+    <p>© Some copyright, 2018</p>
   </footer>
 
   <script src="scripts.js"></script>
