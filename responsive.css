@@ -1,0 +1,147 @@
+@media screen and (min-width: 550px) {
+  /* ============
+
+  NAVIGATION
+
+============ */
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    padding: 0 15%;
+  }
+
+  .nav__title {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav__link:hover .nav__title {
+    color: #2d3c49;
+  }
+
+  .nav__link:hover {
+    color: #2d3c49;
+  }
+
+  .nav__link {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  /* ============
+
+  MAIN
+  
+============ */
+
+  .portfolio__item {
+    margin-top: 2rem;
+  }
+
+  .portfolio__item:first-of-type {
+    margin-top: 1rem;
+  }
+
+  .portfolio__screenshot::after {
+    display: none;
+  }
+
+  .portfolio__description {
+    display: block;
+    margin: 2% auto 0 auto;
+  }
+
+  .portfolio__link:link,
+  .portfolio__link:active {
+    display: block;
+    color: #fff;
+  }
+
+  .portfolio__link:visited,
+  .portfolio__link:hover {
+    color: #02b3e4;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header__about {
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .portfolio__item {
+    width: 48%;
+    margin: 2rem auto 0 auto;
+  }
+
+  .portfolio__item:first-of-type {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid #7d97ad;
+  }
+
+  .footer__item {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .footer__item:first-of-type {
+    margin: 0 auto;
+  }
+
+  .footer__item:last-of-type {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .header,
+  main,
+  .footer {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .footer__item {
+    padding: 0;
+  }
+
+  .footer__item:nth-of-type(2) {
+    order: 2;
+    margin: 0 auto 0 0;
+  }
+
+  .footer__item:last-of-type {
+    width: 50%;
+    order: 1;
+  }
+
+  .footer > p {
+    width: 100%;
+    order: 3;
+  }
+}

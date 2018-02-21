@@ -32,7 +32,6 @@ img {
 a {
   display: inline-block;
   padding: 16px;
-  /* box-sizing: border-box; */
 }
 
 /* ============
@@ -51,6 +50,12 @@ a {
   font-size: 3rem;
   margin: 1rem;
   color: #02b3e4;
+}
+
+.header__about {
+  color: #7d97ad;
+  padding: 0 6%;
+  margin-bottom: 12%;
 }
 
 /* ============
@@ -84,6 +89,10 @@ nav {
   background: #02b3e4;
 }
 
+.nav__title {
+  display: none;
+}
+
 .nav__item {
   box-sizing: border-box;
 }
@@ -103,9 +112,6 @@ nav {
   color: #fff;
 }
 
-.nav__button {
-}
-
 .nav__input {
   display: none;
 }
@@ -120,16 +126,6 @@ nav {
   MAIN
   
 ============ */
-
-.portfolio {
-
-}
-
-.portfolio__about {
-  color: #7d97ad;
-  padding: 0 6%;
-  margin-bottom: 16%;
-}
 
 .portfolio__title {
   text-align: center;
