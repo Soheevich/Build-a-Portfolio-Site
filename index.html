@@ -68,28 +68,23 @@
   <main>
     <article class="portfolio">
 
-      <picture>
+      <picture class="portfolio__photo">
         <source 
-            sizes="(min-width: 640px) 60vw, 100vw" 
-            srcset="opera-200.webp 200w,
-                    opera-400.webp 400w,
-                    opera-800.webp 800w,
-                    opera-1200.webp 1200w,
-                    opera-1600.webp 1600w" 
+            sizes="(max-width: 800px) 100vw" 
+            srcset="dist/images/cover-image-200px.webp 200w,
+                    dist/images/cover-image-400px.webp 400w,
+                    dist/images/cover-image-800px.webp 800w,
+                    dist/images/cover-image-1200px.webp 1200w,
+                    dist/images/cover-image-1600px.webp 1600w" 
             type="image/webp">
         <img 
-            src="opera-400.jpg" alt="" 
-            sizes="(min-width: 640px) 60vw, 100vw" 
-            srcset="opera-200.jpg 200w,
-                    opera-400.jpg 400w,
-                    opera-800.jpg 800w,
-                    opera-1200.jpg 1200w,
-                    opera-1600.jpg 1600w">
-      </picture>
-
-      <picture>
-
-        <img class="portfolio__photo" src="src/images/luca-bravo-217276.jpg" alt="">
+            src="dist/images/cover-image-400px.jpg" alt="" 
+            sizes="(max-width: 800px) 100vw" 
+            srcset="dist/images/cover-image-200px.jpg 200w,
+                    dist/images/cover-image-400px.jpg 400w,
+                    dist/images/cover-image-800px.jpg 800w,
+                    dist/images/cover-image-1200px.jpg 1200w,
+                    dist/images/cover-image-1600px.jpg 1600w">
       </picture>
 
       <h2 class="portfolio__title">Featured Work</h2>
@@ -97,8 +92,22 @@
 
         <div class="portfolio__item">
           <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__screenshot" title="Pixel Art Maker">
-            <img src="src/images/FireShot Capture 4 - Pixel Art Maker! - https___codepen.io_Soheevich_full_GymOeJ_.png" alt="Pixel Art Maker"
-              srcset="">
+            <picture>
+              <source sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw" 
+                      srcset="dist/images/pixel-art-maker-200px.webp 200w,
+                              dist/images/pixel-art-maker-400px.webp 400w,
+                              dist/images/pixel-art-maker-800px.webp 800w,
+                              dist/images/pixel-art-maker-1200px.webp 1200w,
+                              dist/images/pixel-art-maker-1600px.webp 1600w" 
+                        type="image/webp">
+              <img    src="dist/images/pixel-art-maker-400px.jpg" alt="Pixel Art Maker" 
+                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw" 
+                      srcset="dist/images/pixel-art-maker-200px.jpg 200w,
+                              dist/images/pixel-art-maker-400px.jpg 400w,
+                              dist/images/pixel-art-maker-800px.jpg 800w,
+                              dist/images/pixel-art-maker-1200px.jpg 1200w,
+                              dist/images/pixel-art-maker-1600px.jpg 1600w">
+            </picture>
           </a>
           <h3 class="portfolio__description">Pixel Art Maker</h3>
           <a href="https://soheevich.github.io/Pixel-Art-Maker/" class="portfolio__link">https://soheevich.github.io/Pixel-Art-Maker/</a>
@@ -106,7 +115,21 @@
 
         <div class="portfolio__item">
           <a href="#" class="portfolio__screenshot" title="Some site">
-            <img src="src/images/jantine-doornbos-398339-unsplash.jpg" alt="Some site" srcset="">
+            <picture>
+              <source sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw"           
+                      srcset="dist/images/second-portfolio-200px.webp 200w,
+                              dist/images/second-portfolio-400px.webp 400w,
+                              dist/images/second-portfolio-800px.webp 800w,
+                              dist/images/second-portfolio-1200px.webp 1200w,
+                              dist/images/second-portfolio-1600px.webp 1600w" type="image/webp">
+              <img    src="dist/images/second-portfolio-400px.jpg" alt="Some site" 
+                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw"
+                      srcset="dist/images/second-portfolio-200px.jpg 200w,
+                              dist/images/second-portfolio-400px.jpg 400w,
+                              dist/images/second-portfolio-800px.jpg 800w,
+                              dist/images/second-portfolio-1200px.jpg 1200w,
+                              dist/images/second-portfolio-1600px.jpg 1600w">
+            </picture>
           </a>
           <h3 class="portfolio__description">Some site</h3>
           <a href="#" class="portfolio__link">https://soheevich.github.io/Some-site/</a>
@@ -114,7 +137,21 @@
 
         <div class="portfolio__item">
           <a href="#" class="portfolio__screenshot" title="Another site">
-            <img src="src/images/farzad-nazifi-71686-unsplash.jpg" alt="Another site" srcset="">
+            <picture>
+              <source sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw"       
+                      srcset="dist/images/third-portfolio-200px.webp 200w,
+                              dist/images/third-portfolio-400px.webp 400w,
+                              dist/images/third-portfolio-800px.webp 800w,
+                              dist/images/third-portfolio-1200px.webp 1200w,
+                              dist/images/third-portfolio-1600px.webp 1600w" type="image/webp">
+              <img    src="dist/images/third-portfolio-400px.jpg" alt="Another site" 
+                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw"
+                      srcset="dist/images/third-portfolio-200px.jpg 200w,
+                              dist/images/third-portfolio-400px.jpg 400w,
+                              dist/images/third-portfolio-800px.jpg 800w,
+                              dist/images/third-portfolio-1200px.jpg 1200w,
+                              dist/images/third-portfolio-1600px.jpg 1600w">
+            </picture>
           </a>
           <h3 class="portfolio__description">Another site</h3>
           <a href="#" class="portfolio__link">https://soheevich.github.io/Another-site/</a>
@@ -122,7 +159,21 @@
 
         <div class="portfolio__item">
           <a href="#" class="portfolio__screenshot" title="And another site">
-            <img src="src/images/bram-naus-200967-unsplash.jpg" alt="And another site" srcset="">
+            <picture>
+              <source sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw" 
+                      srcset="dist/images/fourth-portfolio-200px.webp 200w,
+                              dist/images/fourth-portfolio-400px.webp 400w,
+                              dist/images/fourth-portfolio-800px.webp 800w,
+                              dist/images/fourth-portfolio-1200px.webp 1200w,
+                              dist/images/fourth-portfolio-1600px.webp 1600w" type="image/webp">
+              <img    src="dist/images/fourth-portfolio-400px.jpg" alt="And another site" 
+                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 48vw"
+                      srcset="dist/images/fourth-portfolio-200px.jpg 200w,
+                              dist/images/fourth-portfolio-400px.jpg 400w,
+                              dist/images/fourth-portfolio-800px.jpg 800w,
+                              dist/images/fourth-portfolio-1200px.jpg 1200w,
+                              dist/images/fourth-portfolio-1600px.jpg 1600w">
+            </picture>
           </a>
           <h3 class="portfolio__description">And another site</h3>
           <a href="#" class="portfolio__link">https://soheevich.github.io/And-another-site/</a>

@@ -1,7 +1,6 @@
 const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
-const webp = require("gulp-webp");
 const concat = require("gulp-concat");
 const responsive = require("gulp-responsive");
 
@@ -26,39 +25,46 @@ gulp.task("imagemin", () =>
     .pipe(gulp.dest("dist/images"))
 );
 
-gulp.task("webp", () =>
-  gulp
-    .src("src/images/*.{jpg,png}")
-    .pipe(webp())
-    .pipe(gulp.dest("dist/images"))
-);
-
 gulp.task("images", function() {
   return gulp
     .src("src/images/*.{jpg,png}")
     .pipe(
-      $.responsive(
+      responsive(
         {
-          "*.jpg": [
+          "*.{jpg,png}": [
+            { width: 200, rename: { suffix: "-200px" } },
+            { width: 400, rename: { suffix: "-400px" } },
             {
-              width: 300,
-              rename: { suffix: "-300px", extname: ".jpg" },
-            },
-            { 
-              width: 600, 
-              rename: { suffix: "-600px", extname: ".jpg" } },
-            {
-              width: 1900,
-              rename: { suffix: "-1900px", extname: ".jpg" }, 
-              // format option can be omitted because // Do not enlarge the output image if the input image are already less than the required dimensions.
-              // format of output image is detected from new filename
-              // format: 'jpeg'
+              width: 800,
+              rename: { suffix: "-800px" }, // format: 'jpeg' // format of output image is detected from new filename // format option can be omitted because // Do not enlarge the output image if the input image are already less than the required dimensions.
               withoutEnlargement: true
             },
             {
-              // Convert images to the webp format
-              width: 630,
-              rename: { suffix: "-630px", extname: ".webp" }
+              width: 1200,
+              rename: { suffix: "-1200px" },
+              withoutEnlargement: true
+            },
+            {
+              width: 1600,
+              rename: { suffix: "-1600px" },
+              withoutEnlargement: true
+            },
+            { width: 200, rename: { suffix: "-200px", extname: ".webp" } },
+            { width: 400, rename: { suffix: "-400px", extname: ".webp" } },
+            {
+              width: 800,
+              rename: { suffix: "-800px", extname: ".webp" }, // format: 'jpeg' // format of output image is detected from new filename // format option can be omitted because // Do not enlarge the output image if the input image are already less than the required dimensions.
+              withoutEnlargement: true
+            },
+            {
+              width: 1200,
+              rename: { suffix: "-1200px", extname: ".webp" },
+              withoutEnlargement: true
+            },
+            {
+              width: 1600,
+              rename: { suffix: "-1600px", extname: ".webp" },
+              withoutEnlargement: true
             }
           ]
         },
