@@ -1,75 +1,3 @@
-@media screen and (min-width: 550px) {
-  /* ============
-
-  NAVIGATION
-
-============ */
-
-  .nav__menu {
-    display: none;
-  }
-
-  .nav__list {
-    position: static;
-    padding: 0 15%;
-  }
-
-  .nav__title {
-    display: block;
-    margin-top: 0.5rem;
-    text-align: center;
-    color: #fff;
-  }
-
-  .nav__link:hover .nav__title {
-    color: #2d3c49;
-  }
-
-  .nav__link:hover {
-    color: #2d3c49;
-  }
-
-  .nav__link {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-
-  /* ============
-
-  MAIN
-  
-============ */
-
-  .portfolio__item {
-    margin-top: 2rem;
-  }
-
-  .portfolio__item:first-of-type {
-    margin-top: 1rem;
-  }
-
-  .portfolio__screenshot::after {
-    display: none;
-  }
-
-  .portfolio__description {
-    display: block;
-    margin: 2% auto 0 auto;
-  }
-
-  .portfolio__link:link,
-  .portfolio__link:active {
-    display: block;
-    color: #fff;
-  }
-
-  .portfolio__link:visited,
-  .portfolio__link:hover {
-    color: #02b3e4;
-  }
-}
-
 @media screen and (min-width: 650px) {
   body {
     font-size: 16px;
@@ -78,6 +6,22 @@
   .header__about {
     margin-bottom: 7%;
   }
+
+  /* ============
+
+  NAVIGATION
+
+============ */
+
+  .nav__list {
+    padding: 0 15%;
+  }
+
+  /* ============
+
+  MAIN
+  
+============ */
 }
 
 @media screen and (min-width: 700px) {
